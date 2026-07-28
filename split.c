@@ -56,11 +56,7 @@ int main(int ac, char **av)
     else
         buf = t_split(s, 0, 0);
     while (buf[i] != NULL)
-    {
-        char *word = buf[i];
-        printf("%s\n", word);
-        i++;
-    }
+        printf("%s\n", buf[i++]);
     free(buf);
     return 0;
 }
